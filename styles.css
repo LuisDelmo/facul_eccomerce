@@ -180,3 +180,81 @@ footer {
 #cart button:hover {
     background-color: #45a049;
 }
+
+
+
+@media (max-width: 768px) {
+    main {
+        padding: 2rem;
+    }
+
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 0.5rem;
+    }
+
+    .product img {
+        height: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    .product h2 {
+        font-size: 1.25rem;
+    }
+
+    .product p {
+        font-size: 1rem;
+    }
+
+    .add-to-cart {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #cart {
+        width: 90%;
+        padding: 10px;
+        top: 10px;
+        right: 10px;
+    }
+
+    #cart h2 {
+        font-size: 16px;
+    }
+
+    #cart-items li {
+        font-size: 14px;
+    }
+
+    #cart button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .rainbow-text {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
