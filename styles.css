@@ -30,14 +30,16 @@ main {
 
 .products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 230px)); /* Ajuste o minmax conforme necessário */
     gap: 1rem;
 }
+
+
 
 .product {
     background-color: white;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 1px;
     text-align: center;
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -45,16 +47,22 @@ main {
 
 .product img {
     width: 100%;
-    height: 60%;
+    height: auto;
     border-bottom: 1px solid #ddd;
     margin-bottom: 1rem;
-    object-fit: fill;
+    object-fit: cover;
 }
 .product img[alt = "Produto 4"] {
     height: 48%;
 
 
 }
+.product img[alt = "Produto 6"] {
+    height: 30%;
+
+
+}
+
 
 .product h2 {
     font-size: 1.5rem;
